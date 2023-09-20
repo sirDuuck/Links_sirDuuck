@@ -1,3 +1,4 @@
+/* Estilos base */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -12,7 +13,8 @@ header {
     background-color: rgba(0, 0, 0, 0.699);
     color: rgb(243, 234, 108);
     text-align: center;
-    padding: 10px;
+    padding: 10px; /* Atualizado o valor do padding */
+    font-family: 'Cabin', sans-serif;
 }
 
 .perfil img {
@@ -38,19 +40,20 @@ ul.row2 {
     padding: 0;
     margin: 0;
     display: block;
-    column-count: 2; /* Divide em duas colunas */
-    column-gap: 20px; /* Espaço entre as colunas */
+    column-count: 2;
+    column-gap: 10px;
 }
 
 ul a {
     text-decoration: none;
-    color: rgb(207, 196, 92);
-    background-color: rgba(95, 85, 85, 0.274);
+    color: rgb(8, 8, 8);
+    background-color: rgba(220, 224, 11, 0.671);
     padding: 5px 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 5px;
     display: inline-block;
-    width: 100%; /* Para que os links ocupem toda a largura da coluna */
+    width: 95%;
+    
 }
 
 ul a:hover {
@@ -59,13 +62,27 @@ ul a:hover {
 
 footer {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.096);
-    color: rgb(255, 255, 255);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: rgba(253, 255, 111, 0.76);
+    padding: 5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
 }
 
 ion-icon {
     font-size: 20px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    /* Aplique estilos específicos para telas menores, como tablets e celulares */
+    ul.row1, ul.row2 {
+        column-count: 1; /* Mostrar links em uma única coluna */
+    }
+    
+    ul a {
+        padding: 10px; /* Ajustar o preenchimento para telas menores */
+    }
 }
