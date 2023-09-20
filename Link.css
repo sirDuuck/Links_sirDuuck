@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(Wallpaper/LinkBG_2.jpg);
+}
+header{
+    background-color: rgba(0, 0, 0, 0.774);
+    color: rgb(243, 234, 108);
+    text-align: center;
+    padding: 15px;
+}
+.perfil img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+nav{
+    background-color: rgba(8, 8, 8, 0.527);
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    color: bisque;
+}
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: rgb(212, 207, 137);
+    padding: 10px;
+}
+ion-icon{
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
