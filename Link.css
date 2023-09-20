@@ -1,41 +1,70 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-image: url(Wallpaper/LinkBG_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-header{
+
+header {
     background-color: rgba(0, 0, 0, 0.699);
     color: rgb(243, 234, 108);
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
+
 .perfil img {
     max-width: 100px;
     border-radius: 50%;
 }
-nav{
+
+nav {
     background-color: rgba(8, 8, 8, 0.527);
     text-align: center;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: block;
-    justify-content: center;
 }
-nav a {
+
+ul.row1,
+ul.row2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    column-count: 2; /* Divide em duas colunas */
+    column-gap: 20px; /* Espaço entre as colunas */
+}
+
+ul a {
     text-decoration: none;
-    color: bisque;
+    color: rgb(207, 196, 92);
+    background-color: rgba(95, 85, 85, 0.274);
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin: 5px;
+    display: inline-block;
+    width: 100%; /* Para que os links ocupem toda a largura da coluna */
 }
+
+ul a:hover {
+    background-color: rgba(179, 177, 29, 0.527);
+}
+
 footer {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.726);
-    color: rgb(212, 207, 137);
+    background-color: rgba(0, 0, 0, 0.096);
+    color: rgb(255, 255, 255);
     padding: 10px;
 }
-ion-icon{
+
+ion-icon {
     font-size: 20px;
     vertical-align: middle;
     margin-right: 5px;
